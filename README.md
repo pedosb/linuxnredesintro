@@ -1,4 +1,8 @@
+Material: https://lapsufpa.wordpress.com/material-jtl2015/
+
 # Mensagem dentro de uma música
+
+Informações em: https://goo.gl/b0CetO
 
 ## Preparação
 
