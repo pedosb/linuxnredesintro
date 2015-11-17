@@ -1,21 +1,23 @@
-# Instale os pré-requisitos (assumindo arch linux)
+# Servidor DASH like
 
-    yaourt -S opencv python2-numpy youtube-dl ffmpeg
+Instale os pré-requisitos (assumindo arch linux)
 
-# Preparação
+    $ yaourt -S opencv python2-numpy youtube-dl ffmpeg
 
-## Baixe o vídeo
+## Preparação
 
-    youtube-dl -f137 https://www.youtube.com/watch?v=Ezc4HdLGxg4 -o video.mp4
+Baixe o vídeo
 
-## Rode o script que divide o vídeo em vários de 10sec e com duas codificações
+    $ youtube-dl -f137 https://www.youtube.com/watch?v=Ezc4HdLGxg4 -o video.mp4
 
-    ./enc.sh
+Rode o script que divide o vídeo em vários de 10sec e com duas codificações
 
-# Rote o servidor
+    $ ./enc.sh
 
-    python2 vserver.py
+Rode o servidor
 
-# E então o cliente
+    $ python2 vserver.py
 
-    python2 cvclient.py
+E então o cliente
+
+    $ python2 cvclient.py
