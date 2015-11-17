@@ -1,10 +1,37 @@
+# Mensagem dentro de uma música
+
+## Preparação
+
+Instale os pré-requisitos (assumindo arch linux)
+
+    $ yaourt -S sox
+
+Prepare os arquivos a serem usados, pegue uma música em um formato qualquer
+(nos comandos a seguir o nome dela é assumido ``musica_entrada``), pegue também
+um gif qualquer e salve-o com o nome ``image.gif``.
+
+Codifique a músida no formato compatível
+
+    $ sox musica_entrada -b 16 music.wav
+
+## Codificando e decodificando
+
+Rode o códificador que vai colocar o arquivo ``image.gif`` dentro da música
+``music.wav`` e escrever o arquivo codificado em ``music_encoded.wav``
+
+    $ python encode.py
+
+Rode o código que vai decodificar a mensagem no arquivo ``music_encoded.wav`` e o arquivo gif salvando-o em um arquivo ``out.gif``
+
+    $ python decode.py
+
 # Servidor DASH like
+
+## Preparação
 
 Instale os pré-requisitos (assumindo arch linux)
 
     $ yaourt -S opencv python2-numpy youtube-dl ffmpeg
-
-## Preparação
 
 Baixe o vídeo
 
@@ -13,6 +40,8 @@ Baixe o vídeo
 Rode o script que divide o vídeo em vários de 10sec e com duas codificações
 
     $ ./enc.sh
+
+## Servidor e cliente
 
 Rode o servidor
 
